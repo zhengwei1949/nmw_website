@@ -1,0 +1,138 @@
+html,a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+/*媒体查询*/
+html,body {
+    font-size: 14px;
+    width: 100%;
+}
+@media screen and (min-width: 320px) {
+    html {font-size: 14px;}
+}
+
+@media screen and (min-width: 360px) {
+    html {font-size: 16px;}
+}
+
+@media screen and (min-width: 400px) {
+    html {font-size: 18px;}
+}
+
+@media screen and (min-width: 440px) {
+    html {font-size: 20px;}
+}
+
+@media screen and (min-width: 480px) {
+    html {font-size: 22px;}
+}
+@media screen and (min-width: 640px) {
+    html {font-size: 28px;}
+}
+
+.m {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary,a {
+    display: block
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+button, html input[type=button], input[type=submit] {
+    -webkit-apperance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+em, i, u {
+    font-style: normal
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+.clear, .clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+
+body {
+    font: 14px/150% "Microsoft YaHei","\5b8b\4f53",Arial, Verdana ;
+    color: #000;
+    background: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+/* a:hover {
+    background: #e4e4e4;
+} */
+

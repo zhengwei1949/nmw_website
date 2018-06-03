@@ -1,0 +1,419 @@
+@color1: #282828;
+@color2: #535353;
+@color3: #eee;
+@color4: #ffb224;
+
+.nmw_layout {   //  牛魔王布局
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  // 顶部导航
+  .guide {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background: url("../images/homepage/top_bg.jpg") no-repeat center;
+    background-size: 100% 40px;
+    line-height: 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    .guideContainer {
+      position: relative;
+      .guide_left {
+        height: 40px;
+        font-size: 14px;
+        text-align: left;
+        width: 25%;
+        float: left;
+        .guide_locate {
+          width: 13px;
+          height: 15px;
+          display: inline-block;
+          background: url("../images/homepage/district.png") no-repeat center;
+          background-size: 13px 15px;
+        }
+      }
+      .guide_middle {
+        width: 180px;
+        height: 20px;
+        background: url("../images/homepage/logo.png") no-repeat center;
+        background-size: 180px 20px;
+        margin: 0 auto;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .guide_right {
+        float: right;
+        height: 40px;
+        .guide_navigation_contact {
+          width: 19px;
+          height: 16px;
+          margin-top: 12px;
+          display: block;
+          background: url("../images/homepage/navigation_contact.png") no-repeat center;
+          background-size: 19px 16px;
+        }
+      }
+    }
+
+  }
+
+  // swiper
+  .swiper-container {
+    margin-top: 30px;
+  }
+  .swiper-pagination-bullet-active {
+    background: red;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 6px;
+    border-radius: 3px;
+  }
+
+  //  中心导航
+  .nav {
+    width: 100%;
+    padding: 28px 0;
+    .nav_b {
+      width: 25%;
+      text-align: center;
+      float: left;
+      >div {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  // 图片列表
+  .imgList {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fbfbfb;
+    padding-bottom: 21px;
+    .imgList_title {
+      padding-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    .imgList_img {
+      position: relative;
+      .product_img1 {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      .product_img2,.product_img3 {
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+      .product_img3 {
+        left: 20px;
+      }
+    }
+  }
+
+  // 精选高清案例
+  .case {
+    width: 100%;
+    .caseTitle {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      .caseTitle_left {
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .caseTitle_right {
+        font-size: 16px;
+        float: right;
+        i {
+          font-style: normal;
+          font-weight: bold;
+        }
+      }
+    }
+    .caseImg {
+      width: 100%;
+      padding-left: 10px;
+      box-sizing: border-box;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      .caseImgList {
+        width: 2044/28rem;
+        margin-bottom: 15px;
+        li {
+          float: left;
+          margin-right: 20/28rem;
+          img {
+            width: 272/28rem;
+            height: 328/28rem;
+          }
+        }
+      }
+    }
+    .caseImg_line {
+      height: 12px;
+      background-color: #eee;
+    }
+  }
+
+  // 装修计算器
+  .calc {
+    width: 100%;
+    box-sizing: border-box;
+    .calcTitle {
+      padding: 0 10px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      .caleTitle_left {
+        float: left;
+        font-size: 18px;
+        color: #282828;
+        font-weight: bold;
+      }
+      .caleTitle_right {
+        float: right;
+        font-size: 14px;
+        span {
+          color: #666;
+          i {
+            color: orange;
+          }
+        }
+      }
+    }
+    .caleContent {
+      width: 100%;
+      .caleContent_top {
+        height: 70px;
+        margin: 0 10px;
+        background: url("../images/homepage/calc_bg.jpg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: #fff;
+          .caleContent_bold {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding-top: 18px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+      .caleContent_bottom {
+        width: 100%;
+        overflow: hidden;
+        .calc_form {
+          width: 100%;
+          background: #f8f8f8;
+          padding-top: 10px;
+          input {
+            width: 85%;
+            height: 36px;
+            margin: 10px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            font-size: 14px;
+            &.btn1 {
+              background: #fff url("../images/homepage/calc_input1.jpg") no-repeat left;
+              background-size: 32px 20px;
+              margin: 0 auto;
+            }
+            &.btn2 {
+              background: #fff url("../images/homepage/calc_input2.jpg") no-repeat left;
+              background-size: 32px 20px;
+            }
+            &.btn3 {
+              background: #fff url("../images/homepage/calc_input3.jpg") no-repeat left;
+              background-size: 32px 20px;
+            }
+
+          }
+          .btn4 {
+            width: 85%;
+            height: 36px;
+            font-size: 14px;
+            display: block;
+            background: url("../images/homepage/calc_red_button.jpg") no-repeat center;
+            background-size: 100% 36px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+          }
+        }
+        .maintain {
+          text-align: center;
+          line-height: 45px;
+          img {
+            width: 14px;
+            height: 15px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  // 底部说明
+  .footer {
+    width: 100%;
+    margin-top: 15px;
+    .footerTel {
+      font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      line-height: 28px;
+      height: 28px;
+      background-color: #eee;
+      font-weight: bold;
+      text-align: center;
+    }
+    .footerServe {
+      width: 100%;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding-bottom: 70px;
+      padding-top: 15px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  //  底部导航
+  .bottom_menu {
+    width: 100%;
+    height: 70px;
+    background: url('../images/homepage/footer_bg.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .bottom_menuList {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin: 25px auto 0;
+        position: relative;
+        p {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .footer_point {
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  // 弹窗
+  .popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 40/28rem 30/28rem;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .popupContainer {
+      width: 100%;
+      //max-width: 350px;
+      height: 100%;
+      border-radius: 6px;
+      background-color: #fff;
+      position: relative;
+      .popupContainerList {
+        width: 460/28rem;
+        //max-width: 260px;
+        height: 733/28rem;
+        margin: 0 auto;
+        padding: 42/28rem 0;
+        box-sizing: border-box;
+        background: url("../images/homepage/alert_bg.png") no-repeat center;
+        background-size: 460/28rem 733/28rem;
+        li {
+          float: left;
+          width: 33.33%;
+          height: 33.33%;
+          text-align: center;
+          img {
+            margin-top: 60/28rem;
+            width: 48/28rem;
+            height: 50/28rem;
+          }
+          p {
+            line-height: 84/28rem;
+          }
+        }
+      }
+      .alert_close {
+        width: 50/28rem;
+        height: 50/28rem;
+        background: url('../images/homepage/close.png') no-repeat center;
+        background-size: 50/28rem 50/28rem;
+        margin: 0 auto;
+      }
+      .alert_tel {
+        width: 100%;
+        height: 27px;
+        line-height: 27px;
+        color: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+      }
+    }
+  }
+}
+
+

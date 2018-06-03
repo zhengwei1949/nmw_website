@@ -1,0 +1,222 @@
+@color1: #282828;
+@color2: #535353;
+
+//  设计师2
+.designer2_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  //  头部导航
+  .topMenu {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background: url("../images/homepage/top_bg.jpg") no-repeat center;
+    background-size: 100% 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    .topMenuContainer {
+      height: 40px;
+      line-height: 40px;
+      .topBack {
+        width: 9px;
+        height: 16px;
+        display: block;
+        float: left;
+        margin-top: 11px;
+        background: url("../images/case/case_back.png") no-repeat center;
+        background-size: 9px 16px;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .topMore {
+        width: 19px;
+        height: 16px;
+        background: url("../images/homepage/navigation_contact.png") no-repeat center;
+        background-size: 19px 16px;
+        float: right;
+        margin-top: 11px;
+      }
+    }
+  }
+
+  //  设计师简介
+  .designer_about {
+    width: 100%;
+    background: url("../images/case/designer_bg.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 19px 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+    .designer_photo {
+      width: 210/28rem;
+      height: 210/28rem;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin: 0 auto 10px;
+      background: url("../images/designer/designerlist_1.jpg") no-repeat center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      position: relative;
+      .designer_level {
+        background: url("../images/case/designer_level.png") no-repeat center;
+        width: 130/28rem;
+        height: 30/28rem;
+        -webkit-background-size: contain;
+        background-size: contain;
+        position: absolute;
+        bottom: -5/28rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        text-align: center;
+        line-height: 30/28rem;
+        font-size: 14px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      color: #fff;
+      line-height: 130%;
+      padding: 0 5px;
+    }
+    span {
+      display: inline-block;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 8px 15px;
+      margin-top: 15px;
+      &:last-of-type {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  // 代表作品
+  .designer2_working {
+    width: 80%;
+    height: 36px;
+    margin: 20px auto;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: url("../images/designer/designer2_working.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  //  案例详情
+  .caseDetails {
+    width: 100%;
+    .caseDetails_l {
+      width: 100%;
+      padding-bottom: 5px;
+      background-color: #eee;
+      &:last-of-type {
+        background-color: #fff;
+      }
+      img  {
+        width: 100%;
+
+      }
+      .caseDetails_text {
+        line-height: 46px;
+        background-color: #fff;
+        span:first-of-type {
+          color: @color1;
+          font-weight: bold;
+          float: left;
+          font-size: 16px;
+        }
+        span:last-of-type {
+          color: @color2;
+          float: right;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  // 底部说明
+  .footer {
+    width: 100%;
+    margin-top: 15px;
+    .footerTel {
+      font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      line-height: 28px;
+      height: 28px;
+      background-color: #eee;
+      font-weight: bold;
+      text-align: center;
+    }
+    .footerServe {
+      width: 100%;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding-bottom: 70px;
+      padding-top: 15px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  //  底部导航
+  .bottom_menu {
+    width: 100%;
+    height: 70px;
+    background: url('../images/homepage/footer_bg.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .bottom_menuList {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin: 25px auto 0;
+        position: relative;
+        p {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .footer_point {
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+      }
+    }
+  }
+}

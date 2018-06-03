@@ -1,0 +1,183 @@
+//  standard2
+.standard2_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  //  头部导航
+  .topMenu {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background: url("../images/homepage/top_bg.jpg") no-repeat center;
+    background-size: 100% 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    .topMenuContainer {
+      height: 40px;
+      line-height: 40px;
+      .topBack {
+        width: 9px;
+        height: 16px;
+        display: block;
+        float: left;
+        margin-top: 11px;
+        background: url("../images/case/case_back.png") no-repeat center;
+        background-size: 9px 16px;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .topMore {
+        width: 19px;
+        height: 16px;
+        background: url("../images/homepage/navigation_contact.png") no-repeat center;
+        background-size: 19px 16px;
+        float: right;
+        margin-top: 11px;
+      }
+    }
+  }
+
+  // 滑块
+  .slipper {
+    margin: 40px auto 0;
+    width: 20rem;
+    height: 640/28rem;
+    background: url("../images/standard/standard2_slipperbg.png") no-repeat center;
+    background-size: 560/28rem 640/28rem;
+    .swiper-slide {
+      margin-top: 18/28rem;
+      >img {
+        width: 100%;
+      }
+    }
+
+    /*overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    .slipperList {
+      width: 400%;
+      li {
+        width: 20rem;
+        float: left;
+
+        img {
+          width: 20rem;
+          margin-top: 22/28rem;
+        }
+      }
+    }
+    .remind {
+      height: 16px;
+      line-height: 16px;
+      font-size: 12px;
+      padding: 0 8px;
+      background-color: rgba(255,255,255,.5);
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }*/
+  }
+
+  //  按钮
+  .standard2_btn {
+    margin: 10px 10px 30px;
+    font-weight: bold;
+    font-size: 24/28rem;
+    .standard2_btn1 {
+      width: 150px;
+      height: 32px;
+      float: left;
+      background: url("../images/standard/standard_hover.jpg") no-repeat center;
+      background-size: 150px 32px;
+      color: #fff;
+      border-radius: 3px;
+
+
+    }
+    .standard2_btn2 {
+      width: 150px;
+      height: 32px;
+      float: right;
+      background-color: #535353;
+      color: #fff;
+      border-radius: 3px;
+
+    }
+  }
+
+  // 底部说明
+  .footer {
+    width: 100%;
+    margin-top: 15px;
+    .footerTel {
+      font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      line-height: 28px;
+      height: 28px;
+      background-color: #eee;
+      font-weight: bold;
+      text-align: center;
+    }
+    .footerServe {
+      width: 100%;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding-bottom: 70px;
+      padding-top: 15px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  //  底部导航
+  .bottom_menu {
+    width: 100%;
+    height: 70px;
+    background: url('../images/homepage/footer_bg.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .bottom_menuList {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin: 25px auto 0;
+        position: relative;
+        p {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .footer_point {
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+      }
+    }
+  }
+}

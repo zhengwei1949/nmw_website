@@ -1,0 +1,400 @@
+//  预约设计师
+.order_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  //  头部导航
+  .topMenu {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background: url("../images/homepage/top_bg.jpg") no-repeat center;
+    background-size: 100% 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    .topMenuContainer {
+      height: 40px;
+      line-height: 40px;
+      .topBack {
+        width: 9px;
+        height: 16px;
+        display: block;
+        float: left;
+        margin-top: 11px;
+        background: url("../images/case/case_back.png") no-repeat center;
+        background-size: 9px 16px;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .topMore {
+        width: 19px;
+        height: 16px;
+        background: url("../images/homepage/navigation_contact.png") no-repeat center;
+        background-size: 19px 16px;
+        float: right;
+        margin-top: 11px;
+      }
+    }
+  }
+
+  //  免费量房表单
+  .calc {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 45px;
+    .caleContent {
+      width: 100%;
+      .caleContent_top {
+        height: 70px;
+        margin: 0 10px;
+        background: url("../images/amount/amount_banner.jpg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: #fff;
+          .caleContent_bold {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding-top: 18px;
+            padding-bottom: 5px;
+          }
+          span:last-of-type i {
+            color: orange;
+          }
+        }
+      }
+
+      //  全部设计师
+      .all_designer {
+        width: 100%;
+        .all_designerBox {
+          width: 100%;
+          padding: 20px 0;
+          overflow: hidden;
+          overflow-x: scroll;
+          background-color: #f8f8f8;
+          .all_designerBoxmin {
+            width: 1313px;
+            .all_designerList {
+              width: 100%;
+              li {
+                width: 125px;
+                height: 200px;
+                float: left;
+                margin-right: 7px;
+                &:last-of-type {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      .caleContent_bottom {
+        width: 100%;
+
+        .bottom_container {
+          width: 100%;
+          background: #f8f8f8;
+          overflow: hidden;
+          .caleContent_bottom {
+            width: 100%;
+            overflow: hidden;
+            .calc_form {
+              width: 100%;
+              background: #f8f8f8;
+              padding-top: 10px;
+              .form_select {
+                width: 85%;
+                height: 36px;
+                margin: 10px auto;
+                display: block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+                background-color: #fff;
+                span {
+                  margin-left: 20/28rem;
+                  color: #666;
+                  line-height: 36px;
+                }
+                select {
+                  font-size: 14px;
+                  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+                  //border: solid 1px #000;
+                  border: none;
+                  /*很关键：将默认的select选择框样式清除*/
+                  appearance: none;
+                  -moz-appearance: none;
+                  -webkit-appearance: none;
+                  //  清除点击时的外边框
+                  outline: none;
+                  //  设置三角背景
+                  background: transparent url("../images/case/case_default.png") no-repeat right;
+                  padding: 0 10px 0 15px;
+                  background-size:8px 4px;
+                  color: #666;
+                }
+                select::-ms-expand {
+                  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+                  display: none;
+                }
+              }
+              input {
+                width: 85%;
+                height: 36px;
+                margin: 10px auto;
+                display: block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding-left: 40px;
+                box-sizing: border-box;
+                font-size: 14px;
+                &.btn1 {
+                  background: #fff url("../images/homepage/calc_input1.jpg") no-repeat left;
+                  background-size: 32px 20px;
+                  margin: 0 auto;
+                }
+                &.btn2 {
+                  background: #fff url("../images/homepage/calc_input2.jpg") no-repeat left;
+                  background-size: 32px 20px;
+                }
+                &.btn3 {
+                  background: #fff url("../images/homepage/calc_input3.jpg") no-repeat left;
+                  background-size: 32px 20px;
+                }
+                &.btn5 {
+                  padding-left: 10px;
+                }
+
+              }
+              .btn4 {
+                width: 85%;
+                height: 36px;
+                font-size: 14px;
+                display: block;
+                background: url("../images/homepage/calc_red_button.jpg") no-repeat center;
+                background-size: 100% 36px;
+                border-radius: 5px;
+                color: #fff;
+                text-align: center;
+                padding: 0;
+                margin: 0 auto;
+              }
+            }
+            .maintain {
+              text-align: center;
+              line-height: 45px;
+              img {
+                width: 14px;
+                height: 15px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+
+        .maintain {
+          text-align: center;
+          line-height: 45px;
+          .maintain_icon {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background: url("../images/homepage/calc_ensure.jpg") no-repeat center;
+            background-size: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  //  代表作品
+  .designer_work {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    .designer2_working {
+      width: 80%;
+      height: 36px;
+      margin: 20px auto;
+      border-radius: 3px;
+      line-height: 36px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      background: url("../images/designer/designer2_working.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .designer_workList {
+      li {
+        width: 48%;
+        img {
+          width: 100%;
+        }
+        p {
+          line-height: 32px;
+          margin-bottom: 10px;
+        }
+      }
+      li:nth-of-type(2n) {
+        float: right;
+      }
+      li:nth-of-type(2n-1) {
+        float: left;
+      }
+    }
+  }
+
+  //  三步
+  .three_steps {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    >h3 {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+    >p {
+      margin-bottom: 15px;
+      color: #535353;
+    }
+    .three_stepsList {
+      li {
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+        }
+        .steps_listBox {
+          border: 1px solid #ccc;
+          border-top: none;
+          padding: 15px 10px 25px;
+          h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+          p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  //  按钮公共样式
+  .person_page {
+    width: 180px;
+    height: 36px;
+    background: url("../images/designer/personpage.png") no-repeat center;
+    -webkit-background-size: 180px 36px;
+    background-size: 180px 36px;
+    margin: 10px auto 25px;
+    position: relative;
+    span {
+      width: 135px;
+      height: 36px;
+      display: inline-block;
+      //text-align: center;
+      color: #fff;
+      line-height: 36px;
+      font-size: 24/28rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  // see do
+  .see_do {
+    margin-bottom: 25px;
+    h3 {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  // 底部说明
+  .footer {
+    width: 100%;
+    margin-top: 15px;
+    .footerTel {
+      font-size: 14px;
+      border-bottom: 1px solid #ccc;
+      line-height: 28px;
+      height: 28px;
+      background-color: #eee;
+      font-weight: bold;
+      text-align: center;
+    }
+    .footerServe {
+      width: 100%;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding-bottom: 70px;
+      padding-top: 15px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  //  底部导航
+  .bottom_menu {
+    width: 100%;
+    height: 70px;
+    background: url('../images/homepage/footer_bg.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .bottom_menuList {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        margin: 25px auto 0;
+        position: relative;
+        p {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .footer_point {
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
